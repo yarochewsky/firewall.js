@@ -1,0 +1,27 @@
+{
+  "name": "firewall",
+  "version": "1.0.0",
+  "description": "Network traffic compiler using ts",
+  "main": "FASTNode.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc */*.ts",
+    "functional": "node test/driver.js",
+    "test": "mocha test/*",
+    "clean": "rm -rf */*.js output/*.c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/yarochewsky/firewall.js.git"
+  },
+  "author": "Daniel Fonseca Yarochewsky",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yarochewsky/firewall.js#readme",
+  "dependencies": {
+    "@types/node": "^12.0.4",
+    "fs": "0.0.1-security",
+    "typescript": "^3.5.1"
+  }
+}
